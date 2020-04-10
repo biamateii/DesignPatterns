@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{F12F0834-5955-41F9-806C-694F61FB41B6}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TravelAgency/Program.cs">
+    <Files>
+      <File FileName="TravelAgency/Program.cs" Line="7" Column="9" />
+      <File FileName="TravelAgency/Properties/AssemblyInfo.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TravelAgency" expanded="True">
+            <Node name="TravelAgency" expanded="True">
+              <Node name="Properties" expanded="True" />
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.TravelAgency PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
