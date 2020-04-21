@@ -1,16 +1,28 @@
 ﻿<Properties StartupConfiguration="{F12F0834-5955-41F9-806C-694F61FB41B6}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TravelAgency/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TravelAgency/Factory/Order.cs">
     <Files>
       <File FileName="TravelAgency/Program.cs" Line="13" Column="1" />
       <File FileName="TravelAgency/Properties/AssemblyInfo.cs" />
+      <File FileName="TravelAgency/Factory/Enums/ERoleType.cs" Line="1" Column="1" />
+      <File FileName="TravelAgency/Factory/User.cs" Line="1" Column="1" />
+      <File FileName="TravelAgency/Factory/UserFactory.cs" Line="1" Column="1" />
+      <File FileName="TravelAgency/Factory/Types/Seller.cs" Line="1" Column="1" />
+      <File FileName="TravelAgency/Factory/Types/Customer.cs" Line="1" Column="1" />
+      <File FileName="TravelAgency/Factory/FactoryTypes/SellerFactory.cs" Line="1" Column="1" />
+      <File FileName="TravelAgency/Factory/FactoryTypes/CustomerFactory.cs" Line="1" Column="1" />
+      <File FileName="TravelAgency/Factory/Order.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TravelAgency" expanded="True">
             <Node name="TravelAgency" expanded="True">
-              <Node name="Properties" expanded="True" />
-              <Node name="Program.cs" selected="True" />
+              <Node name="Factory" expanded="True">
+                <Node name="Enums" expanded="True" />
+                <Node name="FactoryTypes" expanded="True" />
+                <Node name="Types" expanded="True" />
+                <Node name="Order.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
