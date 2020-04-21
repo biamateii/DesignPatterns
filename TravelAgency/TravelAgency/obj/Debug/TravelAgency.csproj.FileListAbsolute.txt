@@ -1,0 +1,6 @@
+/Users/biamateii/Documents/Facultate/SP/DesignPatternsRepo/TravelAgency/TravelAgency/bin/Debug/TravelAgency.exe
+/Users/biamateii/Documents/Facultate/SP/DesignPatternsRepo/TravelAgency/TravelAgency/bin/Debug/TravelAgency.pdb
+/Users/biamateii/Documents/Facultate/SP/DesignPatternsRepo/TravelAgency/TravelAgency/obj/Debug/TravelAgency.csprojAssemblyReference.cache
+/Users/biamateii/Documents/Facultate/SP/DesignPatternsRepo/TravelAgency/TravelAgency/obj/Debug/TravelAgency.csproj.CoreCompileInputs.cache
+/Users/biamateii/Documents/Facultate/SP/DesignPatternsRepo/TravelAgency/TravelAgency/obj/Debug/TravelAgency.exe
+/Users/biamateii/Documents/Facultate/SP/DesignPatternsRepo/TravelAgency/TravelAgency/obj/Debug/TravelAgency.pdb
