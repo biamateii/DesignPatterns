@@ -15,7 +15,7 @@ namespace TravelAgency.Decorator
     {
         public BasicBooking()
         {
-            this.HotelType = EHotelType.Basic;
+            HotelType = EHotelType.Basic;
             SetAmenities();
             SetBasisType();
             SetFacilities();
@@ -31,12 +31,33 @@ namespace TravelAgency.Decorator
         public List<EFacilityType> Facilities { get; set; }
         public List<EAmenityType> Amenitites { get; set; }
         public EBasisType BasisType { get; set; }
-        EHotelType IBooking.HotelType { get; set; }
-        List<EFacilityType> IBooking.Facilities { get; set; }
-        List<EAmenityType> IBooking.Amenitites { get; set; }
-        EBasisType IBooking.BasisType { get; set; }
 
-        IBooking Clone()
+        public void SetFacilities()
+        {
+            Facilities = new List<EFacilityType>();
+        }
+
+        public void SetAmenities()
+        {
+            Amenitites = new List<EAmenityType>();
+        }
+
+        public void SetBasisType()
+        {
+            BasisType = EBasisType.ERoomOnly;
+        }
+
+        public void SetPrice()
+        {
+            Price = 1000;
+        }
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
+
+        public IBooking Clone()
         {
             using (MemoryStream stream = new MemoryStream())
             {
@@ -51,33 +72,6 @@ namespace TravelAgency.Decorator
                 return null;
 
             }
-
-
-        }
-
-        public void SetFacilities()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void SetAmenities()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void SetBasisType()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void SetPrice()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override string ToString()
-        {
-            return base.ToString();
         }
     }
 }

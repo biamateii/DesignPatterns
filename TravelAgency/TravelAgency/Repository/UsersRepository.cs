@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TravelAgency.Factory;
 
 namespace TravelAgency.Repository
 {
-    public class UsersRepository : IEnumerable
+    class UsersRepository : IEnumerable
     {
         private List<User> _users;
 

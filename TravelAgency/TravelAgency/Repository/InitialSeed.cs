@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TravelAgency.Repository
 {
-    public static class IntitialSeed
+    static class IntitialSeed
     {
         public static void Seed(this UsersRepository repository)
         {

@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TravelAgency.Decorator;
 
 namespace TravelAgency.Repository
 {
-    public class BookingRepository : IEnumerable
+    class BookingRepository : IEnumerable
     {
         private List<IBooking> _bookings;
 

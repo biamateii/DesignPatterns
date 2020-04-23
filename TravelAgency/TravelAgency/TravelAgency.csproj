@@ -40,12 +40,45 @@
     <Compile Include="Factory\FactoryTypes\SellerFactory.cs" />
     <Compile Include="Factory\FactoryTypes\CustomerFactory.cs" />
     <Compile Include="Factory\Order.cs" />
+    <Compile Include="Builder\BookingDirector.cs" />
+    <Compile Include="Builder\BookingBuilder.cs" />
+    <Compile Include="Builder\IBookingBuilder.cs" />
+    <Compile Include="Builder\Types\CityBreak.cs" />
+    <Compile Include="Builder\Types\Christmas.cs" />
+    <Compile Include="Builder\Types\NewYear.cs" />
+    <Compile Include="Builder\Types\Easter.cs" />
+    <Compile Include="Builder\Enums\ECategoryType.cs" />
+    <Compile Include="Builder\Enums\ECity.cs" />
+    <Compile Include="Decorator\IBooking.cs" />
+    <Compile Include="Decorator\BasicBooking.cs" />
+    <Compile Include="Decorator\BookingDecorator.cs" />
+    <Compile Include="Decorator\enums\EBasisType.cs" />
+    <Compile Include="Decorator\enums\EAmenityType.cs" />
+    <Compile Include="Decorator\enums\EFacilityType.cs" />
+    <Compile Include="Decorator\enums\EHotelType.cs" />
+    <Compile Include="Decorator\DecoraorTypes\HotelFourStarsDecorator.cs" />
+    <Compile Include="Decorator\DecoraorTypes\HotelThreeStarsDecorator.cs" />
+    <Compile Include="Decorator\DecoraorTypes\HotelFiveStarsDecorator.cs" />
+    <Compile Include="Proxy\IActionMenu.cs" />
+    <Compile Include="Proxy\ActionMenu.cs" />
+    <Compile Include="Proxy\IAuthentication.cs" />
+    <Compile Include="Proxy\SafeAccountProxy.cs" />
+    <Compile Include="Proxy\Authentication.cs" />
+    <Compile Include="Repository\UsersRepository.cs" />
+    <Compile Include="Repository\InitialSeed.cs" />
+    <Compile Include="Repository\RequestRepository.cs" />
+    <Compile Include="Repository\Context.cs" />
+    <Compile Include="Repository\BookingRepository.cs" />
+    <Compile Include="Utils\Menu.cs" />
+    <Compile Include="Proxy\Request.cs" />
+    <Compile Include="Proxy\Types\ERequestType.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Factory\" />
     <Folder Include="Factory\Enums\" />
     <Folder Include="Factory\Types\" />
     <Folder Include="Factory\FactoryTypes\" />
+    <Folder Include="Proxy\Types\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

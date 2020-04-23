@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TravelAgency.Repository
 {
-    public class Context
+    class Context
     {
         public BookingRepository BookingRepository { get; set; }
 

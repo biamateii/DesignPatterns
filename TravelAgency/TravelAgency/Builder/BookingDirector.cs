@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TravelAgency.Builder.Enums;
 using TravelAgency.Builder.Types;
+using TravelAgency.Decorator;
 
 namespace TravelAgency.Builder
 {

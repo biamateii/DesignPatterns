@@ -4,15 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TravelAgency.Builder.Enums;
+using TravelAgency.Decorator;
 
 namespace TravelAgency.Builder.Types
 {
-    class CityBreak : BookingBuilder
+    class CityBreak: BookingBuilder
     {
 
         public CityBreak(BasicBooking booking):base(booking)
         {
-
+            //Empty constructor
         }
 
         public override void SetCity()
@@ -27,7 +28,7 @@ namespace TravelAgency.Builder.Types
 
         public override void SetNumberOfPersons()
         {
-            this.Booking.NumberOfPersons = 10;
+            this.Booking.NumberOfPersons = 2;
         }
 
         public override void SetCategory()
@@ -37,7 +38,7 @@ namespace TravelAgency.Builder.Types
 
         public override void SetPrice()
         {
-            this.Booking.Price = 5000;
+            this.Booking.Price = 3000;
         }
 
 

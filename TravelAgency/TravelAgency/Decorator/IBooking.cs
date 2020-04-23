@@ -8,7 +8,7 @@ using TravelAgency.Decorator.enums;
 
 namespace TravelAgency.Decorator
 {
-    public interface IBooking : IVisitable
+    interface IBooking
     {
         ECity City { get; set; }
 

@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TravelAgency.Builder.Enums;
+using TravelAgency.Decorator;
 
 namespace TravelAgency.Builder.Types
 {
-    class Christmas:BookingBuilder
+    class Christmas: BookingBuilder
     {
        
-
         public Christmas(BasicBooking booking) : base(booking)
         {
-
+            //Empty constructor
         }
 
         public override void SetCity()

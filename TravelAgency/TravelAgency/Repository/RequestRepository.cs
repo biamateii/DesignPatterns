@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TravelAgency.Proxy;
 
 namespace TravelAgency.Repository
 {
-    public class RequestRepository : IEnumerable
+    class RequestRepository : IEnumerable
     {
         private List<Request> _requests;
 

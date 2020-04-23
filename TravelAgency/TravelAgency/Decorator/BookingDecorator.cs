@@ -8,7 +8,7 @@ using TravelAgency.Decorator.enums;
 
 namespace TravelAgency.Decorator
 {
-    class BookingDecorator : IBooking
+    abstract class BookingDecorator : IBooking
     {
         protected IBooking DecoratedBooking;
 
@@ -48,11 +48,5 @@ namespace TravelAgency.Decorator
         {
             return this.DecoratedBooking.ToString();
         }
-
-        public void Accept(IVisitor visitor)
-        {
-            visitor.Visit(this);
-        }
-
     }
 }

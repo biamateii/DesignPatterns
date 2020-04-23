@@ -28,13 +28,12 @@ namespace TravelAgency.Decorator.DecoraorTypes
             this.DecoratedBooking.Facilities.AddRange(new List<EFacilityType>()
             {
                 EFacilityType.EFreeParking,
-               
             });
         }
 
         public override void SetBasisType()
         {
-            this.DecoratedBooking.BasisType = EBasisType.EBadAndBreakfast;
+            this.DecoratedBooking.BasisType = EBasisType.ERoomOnly;
         }
 
         public override void SetAmenities()
@@ -45,8 +44,6 @@ namespace TravelAgency.Decorator.DecoraorTypes
                EAmenityType.EShampoo,
                EAmenityType.ETV,
                EAmenityType.EWifi
-              
-
             });
         }
 

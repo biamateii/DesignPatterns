@@ -1,8 +1,8 @@
 ﻿using System;
+using TravelAgency.Decorator;
+
 namespace TravelAgency.Factory
 {
-    class IBooking { };
-
     class Order
     {
         private IBooking _booking;

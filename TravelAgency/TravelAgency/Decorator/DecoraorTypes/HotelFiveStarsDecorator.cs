@@ -32,7 +32,6 @@ namespace TravelAgency.Decorator.DecoraorTypes
                 EFacilityType.EGym,
                 EFacilityType.EHotTub,
                 EFacilityType.EPool
-
             });
         }
 
@@ -50,8 +49,6 @@ namespace TravelAgency.Decorator.DecoraorTypes
                EAmenityType.ETV,
                EAmenityType.EWifi,
                EAmenityType.EWashingMachine
-
-
             });
         }
     }
