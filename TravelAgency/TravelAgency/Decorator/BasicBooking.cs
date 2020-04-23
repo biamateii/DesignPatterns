@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TravelAgency.Builder.Enums;
 using TravelAgency.Decorator.enums;
+using TravelAgency.Utils;
 
 namespace TravelAgency.Decorator
 {
@@ -54,7 +55,7 @@ namespace TravelAgency.Decorator
 
         public override string ToString()
         {
-            return base.ToString();
+            return DataFormatting.WriteToConsole(this);
         }
 
         public IBooking Clone()

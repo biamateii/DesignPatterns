@@ -72,6 +72,7 @@
     <Compile Include="Utils\Menu.cs" />
     <Compile Include="Proxy\Request.cs" />
     <Compile Include="Proxy\Types\ERequestType.cs" />
+    <Compile Include="Utils\DataFormatting.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Factory\" />

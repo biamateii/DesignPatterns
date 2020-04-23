@@ -40,12 +40,12 @@ namespace TravelAgency.Proxy
                     context.BookingRepository.Add(threeStarsHotel);
                     break;
                 case EHotelType.EFourStars:
-                    var fourStarsHotel = new HotelThreeStarsDecorator(basicBooking);
+                    var fourStarsHotel = new HotelFourStarsDecorator(basicBooking);
                     createdBooking = fourStarsHotel;
                     context.BookingRepository.Add(fourStarsHotel);
                     break;
                 case EHotelType.EFiveStars:
-                    var fiveStarsHotel = new HotelThreeStarsDecorator(basicBooking);
+                    var fiveStarsHotel = new HotelFiveStarsDecorator(basicBooking);
                     createdBooking = fiveStarsHotel;
                     context.BookingRepository.Add(fiveStarsHotel);
                     break;
@@ -122,7 +122,7 @@ namespace TravelAgency.Proxy
                     break;
             }
 
-            Console.WriteLine("Number of houses:");
+            Console.WriteLine("Number of bookings:");
             int numberOfHouses = Convert.ToInt32(Console.ReadLine());
             AddBooking(categoryType, hotelType, numberOfHouses);
         }

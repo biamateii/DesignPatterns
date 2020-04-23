@@ -9,7 +9,7 @@ namespace TravelAgency.Utils
         public static readonly string MenuActions = @"Please select one of the following actions:
                 1. Login  ಠᴗಠ
                 2. Logout ಠ_ಠ
-                3. Let's add a new booking!
+                3. Let's add some bookings!
                 4. Check for requests!
                 5. Take a look at our offers!
                 6. I want a booking!
