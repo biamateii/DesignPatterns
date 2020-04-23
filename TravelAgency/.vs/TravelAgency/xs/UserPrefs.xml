@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{F12F0834-5955-41F9-806C-694F61FB41B6}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TravelAgency/Utils/DataFormatting.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TravelAgency/Program.cs">
     <Files>
-      <File FileName="TravelAgency/Program.cs" Line="15" Column="25" />
+      <File FileName="TravelAgency/Program.cs" Line="14" Column="1" />
       <File FileName="TravelAgency/Properties/AssemblyInfo.cs" />
       <File FileName="TravelAgency/Factory/Enums/ERoleType.cs" />
       <File FileName="TravelAgency/Factory/User.cs" />
@@ -13,37 +13,37 @@
       <File FileName="TravelAgency/Factory/Order.cs" />
       <File FileName="TravelAgency/Proxy/IActionMenu.cs" />
       <File FileName="TravelAgency/Proxy/IAuthentication.cs" />
-      <File FileName="TravelAgency/Proxy/ActionMenu.cs" />
-      <File FileName="TravelAgency/Proxy/Authentication.cs" />
+      <File FileName="TravelAgency/Proxy/ActionMenu.cs" Line="51" Column="27" />
+      <File FileName="TravelAgency/Proxy/Authentication.cs" Line="27" Column="1" />
       <File FileName="TravelAgency/Proxy/SafeAccountProxy.cs" Line="127" Column="1" />
-      <File FileName="TravelAgency/Utils/Menu.cs" />
-      <File FileName="TravelAgency/Decorator/IBooking.cs" Line="11" Column="5" />
+      <File FileName="TravelAgency/Utils/Menu.cs" Line="29" Column="52" />
+      <File FileName="TravelAgency/Decorator/IBooking.cs" Line="29" Column="13" />
       <File FileName="TravelAgency/Decorator/BookingDecorator.cs" />
-      <File FileName="TravelAgency/Decorator/BasicBooking.cs" Line="18" Column="13" />
+      <File FileName="TravelAgency/Decorator/BasicBooking.cs" Line="55" Column="1" />
       <File FileName="TravelAgency/Builder/BookingBuilder.cs" Line="32" Column="20" />
       <File FileName="TravelAgency/Builder/IBookingBuilder.cs" Line="22" Column="35" />
       <File FileName="TravelAgency/Builder/BookingDirector.cs" Line="32" Column="32" />
       <File FileName="TravelAgency/Builder/Enums/ECategoryType.cs" Line="1" Column="1" />
       <File FileName="TravelAgency/Builder/Enums/ECity.cs" Line="1" Column="1" />
-      <File FileName="TravelAgency/Builder/Types/Christmas.cs" Line="14" Column="25" />
-      <File FileName="TravelAgency/Builder/Types/CityBreak.cs" />
-      <File FileName="TravelAgency/Builder/Types/Easter.cs" />
-      <File FileName="TravelAgency/Builder/Types/NewYear.cs" />
-      <File FileName="TravelAgency/Decorator/enums/EBasisType.cs" />
+      <File FileName="TravelAgency/Builder/Types/Christmas.cs" Line="31" Column="45" />
+      <File FileName="TravelAgency/Builder/Types/CityBreak.cs" Line="14" Column="25" />
+      <File FileName="TravelAgency/Builder/Types/Easter.cs" Line="11" Column="17" />
+      <File FileName="TravelAgency/Builder/Types/NewYear.cs" Line="13" Column="23" />
+      <File FileName="TravelAgency/Decorator/enums/EBasisType.cs" Line="1" Column="1" />
       <File FileName="TravelAgency/Decorator/enums/EFacilityType.cs" />
       <File FileName="TravelAgency/Decorator/enums/EHotelType.cs" />
       <File FileName="TravelAgency/Decorator/enums/EAmenityType.cs" />
       <File FileName="TravelAgency/Decorator/DecoraorTypes/HotelFiveStarsDecorator.cs" Line="34" Column="36" />
-      <File FileName="TravelAgency/Decorator/DecoraorTypes/HotelFourStarsDecorator.cs" />
-      <File FileName="TravelAgency/Decorator/DecoraorTypes/HotelThreeStarsDecorator.cs" />
+      <File FileName="TravelAgency/Decorator/DecoraorTypes/HotelFourStarsDecorator.cs" Line="38" Column="74" />
+      <File FileName="TravelAgency/Decorator/DecoraorTypes/HotelThreeStarsDecorator.cs" Line="36" Column="67" />
       <File FileName="TravelAgency/Repository/BookingRepository.cs" Line="15" Column="10" />
       <File FileName="TravelAgency/Repository/Context.cs" />
-      <File FileName="TravelAgency/Repository/InitialSeed.cs" />
+      <File FileName="TravelAgency/Repository/InitialSeed.cs" Line="9" Column="5" />
       <File FileName="TravelAgency/Repository/RequestRepository.cs" />
       <File FileName="TravelAgency/Repository/UsersRepository.cs" />
       <File FileName="TravelAgency/Proxy/Request.cs" />
       <File FileName="TravelAgency/Proxy/Types/ERequestType.cs" />
-      <File FileName="TravelAgency/Utils/DataFormatting.cs" Line="6" Column="16" />
+      <File FileName="TravelAgency/Utils/DataFormatting.cs" Line="31" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -67,9 +67,8 @@
                 <Node name="Types" expanded="True" />
               </Node>
               <Node name="Repository" expanded="True" />
-              <Node name="Utils" expanded="True">
-                <Node name="DataFormatting.cs" selected="True" />
-              </Node>
+              <Node name="Utils" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>

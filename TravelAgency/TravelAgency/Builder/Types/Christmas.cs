@@ -28,7 +28,7 @@ namespace TravelAgency.Builder.Types
 
         public override void SetNumberOfPersons()
         {
-            this.Booking.NumberOfPersons = 7;
+            this.Booking.NumberOfPersons = 5;
         }
 
         public override void SetCategory()
