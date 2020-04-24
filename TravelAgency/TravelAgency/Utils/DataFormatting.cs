@@ -21,8 +21,8 @@ How long?               {booking.NumberOfDays} days
 How many persons?       {booking.NumberOfPersons} 
 Where to stay?          Hotel {booking.HotelType.ToString().Substring(1)}
 What kind of package?   {booking.BasisType.ToString().Substring(1)}
-Your facilities:        {facilities.ToString().Remove(facilities.Length - 2)}
-Your amenities:         {amenities.ToString().Remove(amenities.Length - 2)}
+Your facilities:        {(facilities.Length > 0 ? facilities.ToString().Remove(facilities.Length - 2) : "")}
+Your amenities:         {(amenities.Length > 0 ? amenities.ToString().Remove(amenities.Length - 2) : "")}
 
 Total price:            ${booking.Price} 
 =========================================================={Environment.NewLine}";

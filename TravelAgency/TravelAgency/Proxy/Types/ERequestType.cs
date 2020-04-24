@@ -1,5 +1,4 @@
-﻿using System;
-namespace TravelAgency.Proxy.Types
+﻿namespace TravelAgency.Proxy.Types
 {
     enum ERequestType
     {

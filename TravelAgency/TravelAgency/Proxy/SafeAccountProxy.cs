@@ -5,6 +5,7 @@ using TravelAgency.Decorator.enums;
 using TravelAgency.Factory;
 using TravelAgency.Factory.Enums;
 using TravelAgency.Factory.Types;
+using TravelAgency.Visitor;
 
 namespace TravelAgency.Proxy
 {
@@ -13,11 +14,13 @@ namespace TravelAgency.Proxy
         private User _user;
         private IActionMenu _actionMenu;
         private IAuthentication _authentication;
+        private Report _report;
 
         public SafeAccountProxy(IActionMenu actionMenu, IAuthentication authentication)
         {
             _authentication = authentication;
             _actionMenu = actionMenu;
+            _report = new Report();
         }
 
         public IBooking AddBooking(ECategoryType categoryType, EHotelType hotelType, int numberOfBookings)
@@ -61,8 +64,6 @@ namespace TravelAgency.Proxy
             if (_user != null)
             {
                 _authentication.LogOut();
-                var user = _user as Customer;
-
                 _user = null;
             }
         }
@@ -103,11 +104,16 @@ namespace TravelAgency.Proxy
             }
         }
 
-        public void ShowFullReport()
+        public void ShowOrders(Report report)
         {
-            if (_user != null && _user.RoleType() == ERoleType.ESeller)
+            if (_user != null && _user.RoleType() == ERoleType.ECustomer)
             {
-                _actionMenu.ShowFullReport();
+                var user = _user as Customer;
+                if (user != null)
+                {
+                    user.Accept(_report);
+                }
+                _actionMenu.ShowOrders(_report);
             }
             else
             {

@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
+using TravelAgency.Proxy;
 using TravelAgency.Repository;
 
 namespace TravelAgency.Strategy
 {
-    public abstract class RequestBookingStrategy
+    abstract class RequestBookingStrategy
     {
         protected RequestRepository _requestRepository;
         protected BookingRepository _bookingRepository;
@@ -21,8 +18,8 @@ namespace TravelAgency.Strategy
         protected bool BookingExisting(Request request)
         {
             return _bookingRepository.Query
-                .Where(building => building.HotelType == request.HotelType
-                                   && building.City == request.CityType)
+                .Where(booking => booking.HotelType == request.HotelType
+                                   && booking.Category == request.CategoryType)
                 .Any();
         }
 

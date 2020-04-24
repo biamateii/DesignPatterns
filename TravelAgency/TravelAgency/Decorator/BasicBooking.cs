@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
-using System.Text;
-using System.Threading.Tasks;
 using TravelAgency.Builder.Enums;
 using TravelAgency.Decorator.enums;
 using TravelAgency.Utils;
@@ -50,7 +47,7 @@ namespace TravelAgency.Decorator
 
         public void SetPrice()
         {
-            Price = 1000;
+            Price = 0;
         }
 
         public override string ToString()

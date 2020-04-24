@@ -1,8 +1,8 @@
-﻿using System;
-using TravelAgency.Builder.Enums;
+﻿using TravelAgency.Builder.Enums;
 using TravelAgency.Decorator;
 using TravelAgency.Decorator.enums;
 using TravelAgency.Factory.Types;
+using TravelAgency.Visitor;
 
 namespace TravelAgency.Proxy
 {
@@ -18,7 +18,7 @@ namespace TravelAgency.Proxy
 
         void ShowOffers();
 
-        void ShowFullReport();
+        void ShowOrders(Report report);
 
         void AddBookingMenu();
     }

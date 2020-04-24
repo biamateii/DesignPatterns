@@ -1,5 +1,4 @@
-﻿using System;
-using TravelAgency.Factory.Enums;
+﻿using TravelAgency.Factory.Enums;
 
 namespace TravelAgency.Factory
 {

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using TravelAgency.Decorator.enums;
 
 namespace TravelAgency.Decorator.DecoraorTypes
@@ -20,7 +16,7 @@ namespace TravelAgency.Decorator.DecoraorTypes
 
         public override void SetPrice()
         {
-            this.DecoratedBooking.Price = 2000;
+            this.DecoratedBooking.Price += 2000;
         }
 
         public override void SetFacilities()

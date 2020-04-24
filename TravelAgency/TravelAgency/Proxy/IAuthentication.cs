@@ -1,5 +1,4 @@
-﻿using System;
-using TravelAgency.Factory;
+﻿using TravelAgency.Factory;
 
 namespace TravelAgency.Proxy
 {

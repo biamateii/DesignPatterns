@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace TravelAgency.Utils
+﻿namespace TravelAgency.Utils
 {
     static class Menu
     {
@@ -14,8 +10,8 @@ namespace TravelAgency.Utils
                 5. Take a look at our offers!
                 6. I want a booking!
                 7. Request for your own booking!
-                8. Show full report
-                9. Show statistics";
+                8. Let's see your purchased bookings!
+                9. Exit";
 
         public static readonly string ManageRequests = @"Please select one of the following actions:
                 1. Aprove this request  ✔
@@ -35,7 +31,7 @@ namespace TravelAgency.Utils
                 2. CityBreak
                 3. Easter
                 4. NewYear
-                4. Go back";
+                5. Go back";
 
         public static readonly string HotelType = @"Please select which Type of Hotel you would like to buy:
                 1. Standard Hotel    ✌

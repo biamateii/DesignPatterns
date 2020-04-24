@@ -73,6 +73,12 @@
     <Compile Include="Proxy\Request.cs" />
     <Compile Include="Proxy\Types\ERequestType.cs" />
     <Compile Include="Utils\DataFormatting.cs" />
+    <Compile Include="Strategy\RequestExistingBooking.cs" />
+    <Compile Include="Strategy\RequestBookingStrategy.cs" />
+    <Compile Include="Strategy\RequestNewBooking.cs" />
+    <Compile Include="Visitor\IVisitable.cs" />
+    <Compile Include="Visitor\IVisitor.cs" />
+    <Compile Include="Visitor\Report.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Factory\" />
@@ -80,6 +86,7 @@
     <Folder Include="Factory\Types\" />
     <Folder Include="Factory\FactoryTypes\" />
     <Folder Include="Proxy\Types\" />
+    <Folder Include="Visitor\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

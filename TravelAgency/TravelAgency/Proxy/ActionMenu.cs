@@ -10,6 +10,8 @@ using TravelAgency.Utils;
 using TravelAgency.Factory;
 using TravelAgency.Proxy.Types;
 using System.Linq;
+using TravelAgency.Strategy;
+using TravelAgency.Visitor;
 
 namespace TravelAgency.Proxy
 {
@@ -23,7 +25,6 @@ namespace TravelAgency.Proxy
 
         public IBooking AddBooking(ECategoryType categoryType, EHotelType hotelType, int numberOfBookings)
         {
-            Console.WriteLine("AddBooking");
             var bookingDirector = new BookingDirector(categoryType);
             bookingDirector.Construct();
             var basicBooking = bookingDirector.GetBooking();
@@ -60,7 +61,6 @@ namespace TravelAgency.Proxy
 
         public void AddBookingMenu()
         {
-            Console.WriteLine("AddBookingMenu");
             int selectCategoryType;
             int selectHotelType;
             ECategoryType categoryType = 0;
@@ -129,7 +129,6 @@ namespace TravelAgency.Proxy
 
         public void ManageRequests(Customer customer)
         {
-            Console.WriteLine("ManageRequests");
             Console.WriteLine($"Numbers of requests: {context.RequestRepository.Query.Count()}");
             foreach (Request request in this.context.RequestRepository)
             {
@@ -197,7 +196,6 @@ namespace TravelAgency.Proxy
 
         public void RequestExistingBooking(Customer customer)
         {
-            Console.WriteLine("RequestExistingBooking");
             ShowOffers();
             var request = new Request();
             int action;
@@ -269,8 +267,8 @@ namespace TravelAgency.Proxy
             request.RequestType = ERequestType.Existing;
             request.Customer = customer;
 
-            //var requestingService = new RequestExistingBooking(context.RequestRepository, context.BookingRepository);
-            //requestingService.BuyingRequest(request);
+            var requestingService = new RequestExistingBooking(context.RequestRepository, context.BookingRepository);
+            requestingService.BuyingRequest(request);
         }
 
         public void RequestNewBooking(Customer customer)
@@ -345,18 +343,12 @@ namespace TravelAgency.Proxy
             request.RequestType = ERequestType.New;
             request.Customer = customer;
 
-            //var requestingService = new RequestNewBooking(context.RequestRepository, context.BookingingsRepository);
-            //requestingService.BuyingRequest(request);
-        }
-
-        public void ShowFullReport()
-        {
-            Console.WriteLine("ShowFullReport");
+            var requestingService = new RequestNewBooking(context.RequestRepository, context.BookingRepository);
+            requestingService.BuyingRequest(request);
         }
 
         public void ShowOffers()
         {
-            Console.WriteLine("ShowOffers");
             int action;
             while (true)
             {
@@ -439,6 +431,11 @@ namespace TravelAgency.Proxy
                     return;
             }
 
+        }
+
+        public void ShowOrders(Report report)
+        {
+            report.PrintReport();
         }
     }
 }

@@ -1,16 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using TravelAgency.Proxy;
 using TravelAgency.Repository;
 
 namespace TravelAgency.Strategy
 {
-    public class RequestExistingBooking : RequestBookingStrategy
+    class RequestExistingBooking : RequestBookingStrategy
     {
-        public RequestExistingBuilding(RequestRepository requestRepository, BookingRepository bookingRepository) : base(requestRepository, bookingRepository)
+        public RequestExistingBooking(RequestRepository requestRepository, BookingRepository bookingRepository) : base(requestRepository, bookingRepository)
         {
+            //Empty constructor
         }
 
         public override void BuyingRequest(Request request)

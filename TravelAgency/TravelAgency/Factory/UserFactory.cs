@@ -1,7 +1,4 @@
-﻿using System;
-using TravelAgency.Factory.Enums;
-
-namespace TravelAgency.Factory
+﻿namespace TravelAgency.Factory
 {
     abstract class UserFactory
     {

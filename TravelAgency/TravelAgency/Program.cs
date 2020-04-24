@@ -11,7 +11,6 @@ namespace TravelAgency
         {
             var context = new Context();
             var accountService = new SafeAccountProxy(new ActionMenu(context), new Authentication());
-
             while (true)
             {
                 int action;
@@ -52,8 +51,10 @@ namespace TravelAgency
                         accountService.RequestNewBooking(null);
                         break;
                     case 8:
-                        accountService.ShowFullReport();
+                        accountService.ShowOrders(null);
                         break;
+                    case 9:
+                        return;
                     default:
                         Console.WriteLine("Invalid request. Please select one of existing actions.");
                         continue;

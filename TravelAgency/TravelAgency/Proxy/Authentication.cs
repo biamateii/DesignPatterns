@@ -1,7 +1,6 @@
 ﻿using System;
+using System.Linq;
 using TravelAgency.Factory;
-using TravelAgency.Factory.FactoryTypes;
-using TravelAgency.Factory.Types;
 using TravelAgency.Repository;
 
 namespace TravelAgency.Proxy
@@ -18,19 +17,22 @@ namespace TravelAgency.Proxy
 
         public User Login(string username, string password)
         {
-            Console.WriteLine("Login");
-            User user;
-            if(username.Equals("1"))
-                user = new SellerFactory().GetUser(username, password);
-            else
-                user = new CustomerFactory().GetUser(username, password);
-
+            var user = _users.Query
+                .Where(u => u.Username == username
+                    && u.Password == password)
+                .FirstOrDefault();
+            if (user == null)
+            {
+                Console.WriteLine("Ups.. Invalid credentials.");
+                return null;
+            }
+            Console.WriteLine("Hi " + user.Username + " ! ಠᴗಠ");
             return user;
         }
 
         public void LogOut()
         {
-            Console.WriteLine("LogOut");
+            Console.WriteLine("Bye Bye ! ಠ_ಠ");
         }
     }
 }
